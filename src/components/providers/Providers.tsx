@@ -1,11 +1,29 @@
 
 //   Global context providers --Theme and global providers
 
-const Providers = () => {
+
+"use client";
+
+import { ThemeProvider } from "next-themes";
+
+interface ProvidersProps {
+  children: React.ReactNode;
+}
+
+const Providers = ({ children }: ProvidersProps)  => {
+    
     return (
-        <div>
-            
-        </div>
+
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem={false}
+            disableTransitionOnChange
+            >
+
+            {children}
+
+        </ThemeProvider>
     );
 };
 
