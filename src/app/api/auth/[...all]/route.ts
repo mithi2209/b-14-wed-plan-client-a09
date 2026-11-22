@@ -1,0 +1,3 @@
+
+
+// Better Auth API handler
