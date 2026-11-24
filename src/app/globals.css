@@ -317,7 +317,8 @@
  /* --arch-radius: 50% 50% 28px 28px / 34% 34% 28px 28px; */
 
   /* --moon-size: clamp(360px, 52vw, 780px); */
-  --moon-size: clamp(220px, 40vw, 500px);
+
+  /* --moon-size: clamp(220px, 40vw, 500px); */
 
   position: relative;
   isolation: isolate;
@@ -344,15 +345,11 @@
    overflow: visible !important; /* Removes the straight vertical cut */ 
 } 
 
-
-
 .wed-plan-hero .swiper-slide  {
   position: relative;
   overflow: visible !important; 
 } 
-                       
-      
-
+   
 /* ---------- ARCH FRAME ---------- */
                                                                    
 .arch-frame {
@@ -360,26 +357,14 @@
   position: relative;
   width: 100%;
   height: 100%;
-
-  /* border: 6px solid rgba(185, 154, 117, 0.55) ;  */
-
+  border: 3px solid rgba(185, 154, 117, 0.55) ; 
   border-radius: var(--arch-radius);
   overflow: hidden;
   isolation: isolate;
   z-index: 1;
-
-    box-shadow:
+  box-shadow:
     0 18px 45px -28px rgba(56, 40, 32, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
-
-/*  box-shadow -2:
-    0 18px 54px -30px rgba(56, 40, 32, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18); */
-
-  /* box-shadow-1:
-    0 40px 100px -30px rgba(56, 40, 32, 0.45),
-    0 15px 40px -15px rgba(56, 40, 32, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.22); */
     
  animation: arch-float 8s ease-in-out infinite;
   will-change: transform
@@ -389,11 +374,6 @@
   box-shadow:
     0 18px 45px -28px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
-
-  /* box-shadow-1:
-    0 40px 100px -30px rgba(0, 0, 0, 0.7),
-    0 15px 40px -15px rgba(0, 0, 0, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12); */
 }
 
 
@@ -456,47 +436,25 @@
 .gold-moon {
 
   position: absolute;
-  /* width: var(--moon-size);
-  height: var(--moon-size); */
-  width: 150%;
+  width: var(--moon-size);
+  height: var(--moon-size);
   aspect-ratio: 1;
   border-radius: 50%;
-
   top: -14%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
   pointer-events: none;
-
   background: radial-gradient(
     circle at 45% 40%,
     rgba(185, 154, 117, 0.34) 0%,
     rgba(185, 154, 117, 0.14) 40%,
     rgba(185, 154, 117, 0) 60%
   );
-
   box-shadow: none;
-  /* animation: moon-pulse 8s ease-in-out infinite; */
-  animation: moon-float 7s ease-in-out infinite ;
+  animation: moon-float 8s ease-in-out infinite ;
   will-change: transform;
-
 }
-
-/* .gold-moon {
-  position: absolute;
-  width: 120%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle at 40% 40%,
-    rgba(185, 154, 117, 0.30),
-    rgba(185, 154, 117, 0.06) 70%);
-  top: -14%;
-  left: -22%;
-  z-index: -1;
-  animation: moon-pulse 8s ease-in-out infinite;
-}  */
-
-
 
 
 .dark .gold-moon {
@@ -509,22 +467,6 @@
     rgba(232, 220, 203, 0) 60%
   );
 }  
-
-
-/* .dark .gold-moon -1{
-  background: radial-gradient(
-    circle at 45% 40%,
-    rgba(232, 220, 203, 0.24) 0%,
-    rgba(185, 154, 117, 0.10) 42%,
-    rgba(185, 154, 117, 0) 72%
-  );
-} */
-
-/* .dark .gold-moon-2 {
-  background: radial-gradient(circle at 40% 40%,
-    rgba(232, 220, 203, 0.20),
-    rgba(185, 154, 117, 0.04) 70%);
-} */
 
 
 
@@ -540,14 +482,6 @@
   } 
 }
 
-
-
-/* 
-@keyframes moon-pulse {
-  0%, 100% { transform: scale(1);    opacity: 0.9; }
-  50%      { transform: scale(1.06); opacity: 1; }
- 
-} */
 
 
 /* Images */
@@ -613,3 +547,22 @@
   .arch-outline-behind,
   .hero-badge { animation: none; }
 }
+
+
+   /* Mobile */                                                                                            
+    .wed-plan-hero {                                                                            --moon-size: clamp(280px, 55vw ,350px);                                                               
+    }                                                                                                       
+                                                                                                            
+    /* Tablet (iPad Mini / Air / Pro 768px - 1024px) */                                                     
+    @media (min-width: 768px) {                                                                             
+      .wed-plan-hero {                                                                                      
+        --moon-size: clamp(360px, 52vw, 400px);                                                             
+      }                                                                                                     
+    }                                                                                                       
+                                                                                                            
+    /* Desktop (1024px+) */                                                                                 
+    @media (min-width: 1024px) {                                                                            
+      .wed-plan-hero {                                                                          --moon-size: clamp(220px, 52vw, 510px)   ;     
+        /* --moon-size: clamp(320px, 24vw, 460px);                                                              */
+      }                                                                                                     
+    }  

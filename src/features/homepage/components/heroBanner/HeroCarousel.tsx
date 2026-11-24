@@ -37,7 +37,7 @@ const HeroCarousel = ({ onSlideChange, onSwiperReady }: HeroCarouselProps) => {
 
         <div className="absolute inset-0 grid h-full grid-cols-2 items-center gap-2 px-1 sm:gap-3 sm:px-2 lg:gap-4">
           
-          <div className="flex h-full w-full justify-center pb-2 pt-9 sm:pb-4 sm:pt-10">
+          <div className="flex h-full w-full justify-center pb-2 pt-9  sm:pb-4 sm:pt-10">
             <ArchFrame
               lightSrc={slide.lightImages[0]}
               darkSrc={slide.darkImages[0]}
@@ -59,6 +59,7 @@ const HeroCarousel = ({ onSlideChange, onSwiperReady }: HeroCarouselProps) => {
                 alt={slide.alt}
                 priority
                 variant="dropped"
+                sparkle
               />
             </div>
           )}
@@ -100,7 +101,7 @@ const HeroCarousel = ({ onSlideChange, onSwiperReady }: HeroCarouselProps) => {
 
             {/* <div className="absolute inset-0 grid h-full grid-cols-2 items-center gap-2 px-1 sm:gap-3 sm:px-2 lg:gap-4"> */}
 
-            <div className="absolute inset-0 grid h-full w-full grid-cols-2 items-center gap-2 px-0 sm:gap-3 lg:gap-4">
+            <div className="absolute inset-0 grid h-full w-full grid-cols-2 items-center gap-2 px-0 sm:gap-3 lg:gap-4 ">
               
               {/* LEFT FRAME */}
               <div className="relative flex h-full w-full justify-center pb-2 pt-9 sm:pb-4 sm:pt-10">
@@ -135,6 +136,7 @@ const HeroCarousel = ({ onSlideChange, onSwiperReady }: HeroCarouselProps) => {
                     alt={slide.alt}
                     priority={index === 0}
                     variant="dropped"
+                    sparkle
                   />
                   {/* Right Badge — sits above the arch, never over the photo */}
                   <div className="hero-badge hero-badge-delayed absolute left-1/2 top-0 z-20 flex -translate-x-1/2 items-center gap-1.5 whitespace-nowrap rounded-full border border-accent/30 bg-background/90 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.12em] text-espresso shadow-md backdrop-blur dark:text-ivory sm:px-3 sm:py-1.5 sm:text-[10px] lg:text-[11px]">
