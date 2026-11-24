@@ -89,7 +89,8 @@ const HeroCarousel = ({ onSlideChange, onSwiperReady }: HeroCarouselProps) => {
       allowTouchMove
       onSwiper={(swiper: SwiperType) => onSwiperReady(swiper)}
       onRealIndexChange={(swiper) => onSlideChange(swiper.realIndex)}
-      className="wed-plan-swiper absolute inset-0 h-full w-full"
+      // className="wed-plan-swiper absolute inset-0 h-full w-full"
+      className="wed-plan-swiper  absolute inset-0 h-full w-full"   
     >
       {weddingSlides.map((slide, index) => {
         const hasSecond = slide.lightImages.length > 1;

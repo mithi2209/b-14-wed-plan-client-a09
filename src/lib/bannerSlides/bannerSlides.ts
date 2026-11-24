@@ -23,8 +23,8 @@ export const weddingSlides: WeddingSlide[] = [
       "/images/banners/img-13.jpg",
     ],
     darkImages: [
-      "/images/banners/img-39.jpg",
-      "/images/banners/img-36.jpg",
+      "/images/banners/img-40.jpg",
+      "/images/banners/img-17.jpg",
     ],
     lightPositions: ["center 40%", "center 45%"],
     darkPositions: ["center 35%", "center 45%"],
@@ -43,8 +43,8 @@ export const weddingSlides: WeddingSlide[] = [
       "/images/banners/img-16.jpg",
     ],
     darkImages: [
-      "/images/banners/img-24-dark.jpg",
-      "/images/banners/img-27-dark.jpg",
+      "/images/banners/img-38.jpg",
+      "/images/banners/img-34.jpg",
     ],
     lightPositions: ["center 35%", "center 35%"],
     darkPositions: ["center 40%", "center 35%"],
@@ -60,11 +60,11 @@ export const weddingSlides: WeddingSlide[] = [
     id: 3,
     lightImages: [
       "/images/banners/img-19-dark.jpg",
-      "/images/banners/img-22.jpg",
+      "/images/banners/img-31.jpg",
     ],
     darkImages: [
-      "/images/banners/img-26-dark.jpg",
-      "/images/banners/img-3.jpg",
+     "/images/banners/img-39.jpg",
+      "/images/banners/img-36.jpg",
     ],
     lightPositions: ["center 35%", "center 45%"],
     darkPositions: ["center 40%", "center 45%"],
@@ -84,8 +84,8 @@ export const weddingSlides: WeddingSlide[] = [
       "/images/banners/img-24-dark.jpg",
     ],
     darkImages: [
-      "/images/banners/img-18-dark.jpg",
-      "/images/banners/img-26-dark.jpg",
+      "/images/banners/img-21.jpg",
+      "/images/banners/img-23.jpg",
     ],
     lightPositions: ["center 40%", "center 45%"],
     darkPositions: ["center 35%", "center 40%"],
