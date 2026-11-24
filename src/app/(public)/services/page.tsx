@@ -6,7 +6,7 @@
 const BrowseAllServices = () => {
     return (
         <div>
-            
+            servicesss
         </div>
     );
 };

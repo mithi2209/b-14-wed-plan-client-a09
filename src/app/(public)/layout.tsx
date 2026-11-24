@@ -1,21 +1,26 @@
+
+
 // # Navbar + Footer layout
 
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 
-const PublicRouteLayout = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
-  return (
+
+const PublicRouteLayout = ({children,}: Readonly<
+    {children: React.ReactNode}>) => {
+
+
+    return (
+
     <>
 
-        <Navbar/>
+      <div className="sticky top-0 z-50">
+        <Navbar />
+      </div>
 
-        <main className="min-h-screen">
-            {children}
-        </main>
+      <main>
+        {children}
+      </main>
 
       <Footer/>
     </>

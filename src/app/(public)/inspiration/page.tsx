@@ -1,8 +1,7 @@
 
 
 
-
-const Logo = () => {
+const InspirationPage = () => {
     return (
         <div>
             
@@ -10,4 +9,4 @@ const Logo = () => {
     );
 };
 
-export default Logo;
+export default InspirationPage;

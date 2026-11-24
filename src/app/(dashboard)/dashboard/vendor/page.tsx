@@ -9,7 +9,7 @@
 const VendorDashboardPage = () => {
     return (
         <div>
-            
+            vendor page
         </div>
     );
 };
