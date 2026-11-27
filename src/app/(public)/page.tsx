@@ -2,7 +2,8 @@
 
 // # Homepage (/)
 
-import HeroSection from "@/features/homepage/components/heroBanner/HeroSection";
+import HeroSection from "@/components/homepage/components/heroBanner/HeroSection";
+
 
 
 
