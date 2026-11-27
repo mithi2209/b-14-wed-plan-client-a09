@@ -2,14 +2,11 @@
 
 "use client";
 
+import { publicNavigation } from "@/config/publicNavigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Browse Services", href: "/services" },
-  { label: "Inspiration", href: "/inspiration" },
-];
+const navLinks = publicNavigation;
 
 interface NavbarLinksProps {
   mobile?: boolean;

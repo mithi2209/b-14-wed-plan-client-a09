@@ -2,20 +2,23 @@
 
 // Protected application pages
 
+import ProtectedRoute from "../(auth)/layout";
+
 
 //  Authentication and access protection
 
 
 
 
-const PrivateLayout = ({
-  children,
-}: Readonly<{
+const PrivateLayout = ({children,}: Readonly<{
   children: React.ReactNode;
-}>) => {
+  }>) => {
+
     return (
        <>
-            {children}
+        <ProtectedRoute>
+          {children}
+        </ProtectedRoute>
        </>
     );
 };
